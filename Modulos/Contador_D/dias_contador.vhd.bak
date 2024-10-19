@@ -1,0 +1,80 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity dias_contador is
+    port (
+        CLK: in STD_LOGIC;
+        reset: in STD_LOGIC;
+        days: out INTEGER range 0 to 26;
+        hours: out INTEGER range 0 to 23;
+        minutes: out INTEGER range 0 to 59;
+        seconds: out INTEGER range 0 to 59
+    );
+end dias_contador;
+
+architecture rtl of dias_contador is
+    constant max_count: INTEGER := 50000000;
+    signal count: INTEGER range 0 to max_count := 0;
+    signal clk_state: STD_LOGIC := '0';
+    signal one_hz_clk: STD_LOGIC := '0';
+
+    signal sec_count: INTEGER range 0 to 59 := 0;
+    signal min_count: INTEGER range 0 to 59 := 0;
+    signal hour_count: INTEGER range 0 to 23 := 0;
+    signal day_count: INTEGER range 0 to 26 := 0;
+
+begin
+    -- Generate 1 Hz clock from 50 MHz clock
+    gen_clock: process(CLK)
+    begin
+        if rising_edge(CLK) then
+            if count < max_count - 1 then 
+                count <= count + 1;
+            else
+                count <= 0;
+                one_hz_clk <= not one_hz_clk;
+            end if;
+        end if;
+    end process;
+
+    -- Counter process
+    count_seconds: process(one_hz_clk, reset)
+    begin
+        if reset = '1' then
+            sec_count <= 0;
+            min_count <= 0;
+            hour_count <= 0;
+            day_count <= 0;
+        elsif rising_edge(one_hz_clk) then
+            if sec_count < 59 then
+                sec_count <= sec_count + 1;
+            else
+                sec_count <= 0;
+                if min_count < 59 then
+                    min_count <= min_count + 1;
+                else
+                    min_count <= 0;
+                    if hour_count < 23 then
+                        hour_count <= hour_count + 1;
+                    else
+                        hour_count <= 0;
+                        if day_count < 26 then
+                            day_count <= day_count + 1;
+                        else
+                            day_count <= 0;
+                        end if;
+                    end if;
+                end if;
+            end if;
+        end if;
+    end process;
+
+    -- Output assignments
+    days <= day_count;
+    hours <= hour_count;
+    minutes <= min_count;
+    seconds <= sec_count;
+
+end rtl;

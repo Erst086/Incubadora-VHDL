@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RS",
+					"strict" : false
+				},
+				{
+					"name" : "ENA",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_LCD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida_PWM",
+					"strict" : false
+				},
+				{
+					"name" : "mtr2",
+					"strict" : false
+				},
+				{
+					"name" : "HmOutTemp",
+					"strict" : false
+				},
+				{
+					"name" : "DATA",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "Start",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

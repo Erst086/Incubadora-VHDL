@@ -1,0 +1,161 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -23.081
+TNS   : -2123.196
+
+Type  : Slow 1200mV 85C Model Setup 'dias_contador:u3|one_hz_clk'
+Slack : -3.359
+TNS   : -64.507
+
+Type  : Slow 1200mV 85C Model Setup 'Contador_4Hr:U5|one_hz_clk'
+Slack : -2.843
+TNS   : -32.016
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.096
+TNS   : -0.158
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_4Hr:U5|one_hz_clk'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'dias_contador:u3|one_hz_clk'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_4Hr:U5|one_hz_clk'
+Slack : -2.678
+TNS   : -41.882
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -2.308
+TNS   : -67.304
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 1.934
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_4Hr:U5|one_hz_clk'
+Slack : 2.549
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -480.327
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'dias_contador:u3|one_hz_clk'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador_4Hr:U5|one_hz_clk'
+Slack : -1.487
+TNS   : -23.792
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -21.231
+TNS   : -1949.401
+
+Type  : Slow 1200mV 0C Model Setup 'dias_contador:u3|one_hz_clk'
+Slack : -3.026
+TNS   : -58.165
+
+Type  : Slow 1200mV 0C Model Setup 'Contador_4Hr:U5|one_hz_clk'
+Slack : -2.565
+TNS   : -28.629
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.063
+TNS   : -0.098
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_4Hr:U5|one_hz_clk'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'dias_contador:u3|one_hz_clk'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_4Hr:U5|one_hz_clk'
+Slack : -2.346
+TNS   : -36.750
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -1.997
+TNS   : -57.982
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : 1.713
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador_4Hr:U5|one_hz_clk'
+Slack : 2.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -480.327
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'dias_contador:u3|one_hz_clk'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_4Hr:U5|one_hz_clk'
+Slack : -1.487
+TNS   : -23.792
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -9.320
+TNS   : -741.155
+
+Type  : Fast 1200mV 0C Model Setup 'dias_contador:u3|one_hz_clk'
+Slack : -0.862
+TNS   : -15.085
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_4Hr:U5|one_hz_clk'
+Slack : -0.631
+TNS   : -4.899
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.193
+TNS   : -0.376
+
+Type  : Fast 1200mV 0C Model Hold 'Contador_4Hr:U5|one_hz_clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'dias_contador:u3|one_hz_clk'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador_4Hr:U5|one_hz_clk'
+Slack : -0.701
+TNS   : -10.622
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : -0.521
+TNS   : -14.673
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.799
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador_4Hr:U5|one_hz_clk'
+Slack : 1.049
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -346.886
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'dias_contador:u3|one_hz_clk'
+Slack : -1.000
+TNS   : -22.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_4Hr:U5|one_hz_clk'
+Slack : -1.000
+TNS   : -16.000
+
+------------------------------------------------------------
